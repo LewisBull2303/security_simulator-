@@ -10,7 +10,7 @@ CSV_PATH = os.path.join(LOGS_DIR, "phish_results.csv")
 XLSX_PATH = os.path.join(LOGS_DIR, "phish_results.xlsx")
 
 def login_page(request):
-    return render(request, "login.html")
+    return render(request, "/templates/login.html")
 
 def submit_login(request):
     if request.method == "POST":
