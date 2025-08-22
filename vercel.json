@@ -19,7 +19,7 @@
       "dest": "security_sim/wsgi.py"
     },
     {
-      "src": "/static/(.*)",
+      "src": "/(.*)",
       "dest": "security_sim/wsgi.py"
     }
   ]
