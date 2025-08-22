@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'security_sim.wsgi.application'
+WSGI_APPLICATION = 'security_sim.wsgi.app'
 
 
 # Database
