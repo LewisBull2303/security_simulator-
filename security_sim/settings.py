@@ -97,6 +97,8 @@ DATABASES = {
    }
 }
 
+print("DATABASE_PASSWORD is:", os.getenv('DATABASE_PASSWORD'))
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
