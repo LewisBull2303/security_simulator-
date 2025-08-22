@@ -16,7 +16,7 @@
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "security_sim/wsgi.py"
+      "dest": "staticfiles/$1"
     },
     {
       "src": "/(.*)",
