@@ -41,4 +41,4 @@ def submit_login(request):
     return redirect("/")
 
 def training_page(request):
-    return render(request, "training.html")
+    return render(request, "tracker/training.html")
