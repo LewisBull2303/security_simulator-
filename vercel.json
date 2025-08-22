@@ -15,11 +15,11 @@
   ],
   "routes": [
     {
-      "src": "/static(.*)",
+      "src": "/static/(.*)",
       "dest": "security_sim/wsgi.py"
     },
     {
-      "src": "/(.*)",
+      "src": "/static/(.*)",
       "dest": "security_sim/wsgi.py"
     }
   ]
