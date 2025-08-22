@@ -82,8 +82,12 @@ WSGI_APPLICATION = 'security_sim.wsgi.app'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'db_name',                      
+        'USER': 'db_user',
+        'PASSWORD': 'db_user_password',
+        'HOST': '',
+        'PORT': 'db_port_number',
     }
 }
 
