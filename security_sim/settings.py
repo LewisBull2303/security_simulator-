@@ -81,14 +81,14 @@ WSGI_APPLICATION = 'security_sim.wsgi.app'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db_name',                      
-        'USER': 'db_user',
-        'PASSWORD': 'db_user_password',
-        'HOST': '',
-        'PORT': 'db_port_number',
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.postgresql',
+       'NAME': '<database_name>',
+       'USER': '<database_username>',
+       'PASSWORD': '<password>',
+       'HOST': '<database_hostname_or_ip>',
+       'PORT': '<database_port>',
+   }
 }
 
 
