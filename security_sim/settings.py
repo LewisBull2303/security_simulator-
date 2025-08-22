@@ -14,8 +14,12 @@ from pathlib import Path
 import dj_database_url
 from dotenv import load_dotenv
 
+
 import os
 
+if os.path.exists('env.py'):
+    import env
+    
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -84,7 +88,7 @@ WSGI_APPLICATION = 'security_sim.wsgi.app'
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
-DATABASE_PASSWORD = os.getenv("DATABASE_PASSWORD")
+DATABASE_PASSWORD = (os.environ.get("DATABASE_PASSWORD"))
 
 DATABASES = {
    'default': {
@@ -93,7 +97,7 @@ DATABASES = {
        'USER': 'postgres.xutxuuovbcpxfgsuzpik',
        'PASSWORD': DATABASE_PASSWORD,
        'HOST': 'aws-1-eu-west-2.pooler.supabase.com',
-       'PORT': '5432',
+       'PORT': '6543',
    }
 }
 
