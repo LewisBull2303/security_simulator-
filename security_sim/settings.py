@@ -83,9 +83,11 @@ WSGI_APPLICATION = 'security_sim.wsgi.app'
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
+DATABASE_PASSWORD = os.getenv("DATABASE_PASSWORD")
+
 DATABASES = {
-   'default': dj_database_url.parse(DATABASE_URL)
-}
+        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+     }
 
 
 # Password validation
