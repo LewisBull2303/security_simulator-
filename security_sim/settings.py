@@ -86,16 +86,12 @@ WSGI_APPLICATION = 'security_sim.wsgi.app'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASE_URL = os.getenv("DATABASE_URL")
-
-DATABASE_PASSWORD = (os.environ.get("DATABASE_PASSWORD"))
-
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
        'NAME': 'postgres',
        'USER': 'postgres.xutxuuovbcpxfgsuzpik',
-       'PASSWORD': DATABASE_PASSWORD,
+       'PASSWORD': os.getenv('DATABASE_PASSWORD'),
        'HOST': 'aws-1-eu-west-2.pooler.supabase.com',
        'PORT': '6543',
    }
