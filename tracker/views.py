@@ -4,7 +4,7 @@ import os
 import csv
 from openpyxl import Workbook, load_workbook
 
-LOGS_DIR = os.path.join(os.path.dirname(__file__), "logs")
+LOGS_DIR = ("https://github.com/LewisBull2303/security_simulator-/tree/master/tracker/logs")
 os.makedirs(LOGS_DIR, exist_ok=True)
 CSV_PATH = os.path.join(LOGS_DIR, "phish_results.csv")
 XLSX_PATH = os.path.join(LOGS_DIR, "phish_results.xlsx")
